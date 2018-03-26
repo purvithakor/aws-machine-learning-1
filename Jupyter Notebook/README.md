@@ -14,7 +14,15 @@ b.	Change Putty Private Key Files(*.ppk) to All Files:<br/>
 <br/>
 ![](https://github.com/princebirring/aws-machine-learning-1/blob/master/Jupyter%20Notebook/screenshots/2.PNG)
 <br/>
-c.	Navigate your AWS  *.pem key and Click open
+c.	Navigate your AWS  *.pem key and Click Open:<br/>
 <br/>
-d.	Click ok.
-e.	Click on Save Private Key.
+![](https://github.com/princebirring/aws-machine-learning-1/blob/master/Jupyter%20Notebook/screenshots/3.PNG)
+<br/>
+d.	Click OK:<br/>
+<br/>
+![](https://github.com/princebirring/aws-machine-learning-1/blob/master/Jupyter%20Notebook/screenshots/4.PNG)
+<br/>
+e.	Click on Save Private Key:<br/>
+<br/>
+![](https://github.com/princebirring/aws-machine-learning-1/blob/master/Jupyter%20Notebook/screenshots/5.PNG)
+<br/>
