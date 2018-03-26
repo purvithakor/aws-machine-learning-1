@@ -7,4 +7,4 @@ a.	32 bit: https://the.earth.li/~sgtatham/putty/latest/w32/puttygen.exe<br/>
 b.	64 bit: https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe<br/>
 ## 3. 3.	Create Private Key Using Puttygen:
 a.	Open Puttygen and Click on Load:<br/>
-![alt text] (https://github.com/princebirring/aws-machine-learning-1/blob/master/Jupyter%20Notebook/screenshots/1.PNG "Logo Title Text 2")
+![](https://github.com/princebirring/aws-machine-learning-1/blob/master/Jupyter%20Notebook/screenshots/1.PNG)
