@@ -22,3 +22,12 @@ http://go.gwu.edu/idpinit<br/>
 
  ### 6.	We will now connect (a.k.a. "ssh into") our instance. To establish this connection (assuming you are in the directory where your private key ("your_key_name.pem") is located, copy/paste the third command (shown below) into the terminal.
  ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/4.png)
+
+### 7. It will ask you if you are sure you want to continue connecting. Type "yes" and press "Enter"
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/6.png)
+ - After you press enter, you will see your terminal prompt change. You will now have a prompt like the one shown below:
+  ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/7.png)
+
+### 8. Now that we have successfully logged-in/ssh'd-in to our DLAMI EC2 instance, we will configure the Jupyter Notebook Server. Run the following 4 commands in order:
+  ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/8.png)
+
