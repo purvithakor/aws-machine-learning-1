@@ -84,5 +84,5 @@ http://go.gwu.edu/idpinit<br/>
   ### Replace "ec2-###-##-##-###.compute-1.amazonaws.com" with your public DNS
   - In case you forgot either your key name, or your DNS, they can be found from selecting your instance from the list of running EC2 instances (AWS page) and clicking "Connect"
   ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/2.png?raw=true)
-
+  ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/15.png?raw=true)
 
