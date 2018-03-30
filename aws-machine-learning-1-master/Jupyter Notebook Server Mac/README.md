@@ -28,6 +28,17 @@ http://go.gwu.edu/idpinit<br/>
  - After you press enter, you will see your terminal prompt change. You will now have a prompt like the one shown below:
   ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/7.png)
 
-### 8. Now that we have successfully logged-in/ssh'd-in to our DLAMI EC2 instance, we will configure the Jupyter Notebook Server. Run the following 4 commands in order:
+### 8. Now that we have successfully logged-in/ssh'd-in to our DLAMI EC2 instance, we will configure the Jupyter Notebook Server. First, we have to create an ssl certificate.
+### Run the following 4 commands in order:
+
   ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/8.png)
 
+### 9. Next, we need to create a password. You use this password to log in to the Jupyter notebook server from your client (a.k.a. local machine/personal laptop) so you can securely access the notebook being served from your EC2 instance.
+### Start an ipython kernel:
+### Type "ipython" and press "Enter"
+ - It might take a minute or two for the ipython kernel to start, be patient, you only have to do this once!
+![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/9.png?raw=true)
+
+### 10. 
+
+### 10.
