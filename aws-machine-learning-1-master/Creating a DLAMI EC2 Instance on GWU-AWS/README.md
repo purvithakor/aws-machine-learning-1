@@ -14,7 +14,7 @@ http://go.gwu.edu/idpinit<br/>
 ## 5. It will default to the t2.micro (free-tier eligible) instance. Click "Next: Configure Instance Details"
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Creating%20a%20DLAMI%20EC2%20Instance%20on%20GWU-AWS/screenshots/4.png)
 
-## 6. It will highlight IAM role and show a warning, ignore it and choose "Next: Add Storage"
+## 6. It will highlight IAM role and show a warning. Ignore the warning, and choose "Next: Add Storage"
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Creating%20a%20DLAMI%20EC2%20Instance%20on%20GWU-AWS/screenshots/5.png)
 
 ## 7. It will default to a storage of 75GB, choose "Next: Add Tags"
