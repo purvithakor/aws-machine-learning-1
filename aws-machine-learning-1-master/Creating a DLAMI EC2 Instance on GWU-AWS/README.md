@@ -1,7 +1,7 @@
 # Jupyter Notebook Server on AWS for Mac
 ## 1.	Go to the following link to create your EC2 instance with Amazon's Deep Learning AMI (DLAMI):
 http://go.gwu.edu/idpinit<br/>
-### Sign in with your "CCAS Cloud ID" (different from your GW net id) and password
+ - Sign in with your "CCAS Cloud ID" (different from your GW net id) and password
 
 ## 2.	Once you login, make sure you are in "N. Virginia" Region (on the top right) and select "Services" -> "EC2":
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Creating%20a%20DLAMI%20EC2%20Instance%20on%20GWU-AWS/screenshots/1.png)
@@ -22,8 +22,8 @@ http://go.gwu.edu/idpinit<br/>
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Creating%20a%20DLAMI%20EC2%20Instance%20on%20GWU-AWS/screenshots/6.png)
 
 ## 8. The next step is very important! You MUST add TWO tags ("Name" and "gwnetid"). Add them as shown, and then click "Next: Configure Security Groups" 
-#### Name should be your first and last name (as shown)
-#### gwnetid should be your GW Net ID (your email address w/ out the @gwmail.gwu.edu)
+ - "Name" should be your first and last name (as shown)
+ - "gwnetid" should be your GW Net ID (your email address w/ out the @gwmail.gwu.edu)
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Creating%20a%20DLAMI%20EC2%20Instance%20on%20GWU-AWS/screenshots/7.png)
 
 ## 9. Choose "Select an existing security group" and choose the first option (DataScience-Default). Then choose "Review and Launch". 
@@ -35,5 +35,6 @@ http://go.gwu.edu/idpinit<br/>
 
 ## 11. Enter a name for your private key, don't use spaces, and select "Download Key Pair". Pay attention to the folder/location where you download your key, you will need it to connect to your instance in the following steps.
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Creating%20a%20DLAMI%20EC2%20Instance%20on%20GWU-AWS/screenshots/10.png)
- - Hint: If, after downloading your key, the key/file somehow gets renamed to something like "brent_skoumal_ML1_key.pem.txt", you should right click on it and rename it. The key has to be saved with the ".pem" extension or else your computer won't treat it as a certificate.
+ - Hint: If, after downloading your key, the key/file somehow gets renamed to something like "brent_skoumal_ML1_key.pem.txt", you should right click on it and rename it. 
+ - The key has to be saved with the ".pem" extension or else your computer won't treat it as a certificate.
  
