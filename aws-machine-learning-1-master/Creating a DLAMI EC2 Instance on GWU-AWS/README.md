@@ -34,7 +34,7 @@ http://go.gwu.edu/idpinit<br/>
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Creating%20a%20DLAMI%20EC2%20Instance%20on%20GWU-AWS/screenshots/9.png)
 
 ### 11. Enter a name for your private key, don't use spaces, and select "Download Key Pair". 
-### Pay attention to the folder/location where you download your key, you will need it each time you ssh into your instance.
+ -  Pay attention to the folder/location where you download your key, you will need it each time you ssh into your instance.
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Creating%20a%20DLAMI%20EC2%20Instance%20on%20GWU-AWS/screenshots/10.png)
  - Hint: If, after downloading your key, the key/file somehow gets renamed to something like "brent_skoumal_ML1_key.pem.txt", you should right click on it and rename it. 
  - The key has to be saved with the ".pem" extension or else your computer won't treat it as a certificate.
