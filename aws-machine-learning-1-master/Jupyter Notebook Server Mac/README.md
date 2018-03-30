@@ -14,19 +14,19 @@ http://go.gwu.edu/idpinit<br/>
 ## 5. It will default to the t2.micro (free-tier eligible) instance. Click "Next: Configure Instance Details"
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/4.png)
 
-## 6. It will Highlight IAM role and show a warning, ignore it and choose "Next: Add Storage"
+## 6. It will highlight IAM role and show a warning, ignore it and choose "Next: Add Storage"
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/5.png)
 
 ## 7. It will default to a storage of 75GB, choose "Next: Add Tags"
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/6.png)
 
-## 8. The next step is very important, you must add TWO tags ("Name" and "gwnetid") 
+## 8. The next step is very important! You MUST add TWO tags ("Name" and "gwnetid") 
  - Name should be your first and last name (as shown)
  - gwnetid should be your GW Net ID (your email address w/ out the @gwmail.gwu.edu)
 ## Add them as shown, and then click "Next: Configure Security Groups" 
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/7.png)
 
-## 9. Next, choose "Select an existing security group" and choose the first option (DataScience-Default). Then choose "Review and Launch". 
+## 9. Choose "Select an existing security group" and choose the first option (DataScience-Default). Then choose "Review and Launch". 
  - If you don't see this option, it's possible that you forgot to change the region to "N. Viriginia" in the top right. If that's the case, change your region and restart on step 2 above.
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/8.png)
 
