@@ -29,8 +29,13 @@ http://go.gwu.edu/idpinit<br/>
   ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/7.png)
 
 ### 8. Now that we have successfully logged-in/ssh'd-in to our DLAMI EC2 instance, we will configure the Jupyter Notebook Server. First, we have to create an ssl certificate.
+ - we will be following the instructions from the following AWS documentation:
+ - https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-config.html <br/>
 ### Run the following 4 commands in order:
-
+ - cd
+ - mkdir ssl
+ - cd ssl
+ - sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout "cert.key" -out "cert.pem" -batch
   ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/8.png)
 
 ### 9. Next, we need to create a password. You use this password to log in to the Jupyter notebook server from your client (a.k.a. local machine/personal laptop) so you can securely access the notebook being served from your EC2 instance.
@@ -39,6 +44,35 @@ http://go.gwu.edu/idpinit<br/>
  - It might take a minute or two for the ipython kernel to start, be patient, you only have to do this once!
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/9.png?raw=true)
 
-### 10. 
+### 10. Notice that the prompt will change, it should look similar to the ipython prompt that you see in a Jupyter Notebook. Import the "passwd()" method by running the following command:
+ - from IPython.lib import passwd 
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/10.png)
+### Once it's imported, run "passwd()" as shown below:
+ - passwd()
+![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/11.png?raw=true)
 
-### 10.
+### 11. You will now be prompted to enter a password. This can be any password you like, but REMEMBER IT! You will be asked for this password each and every time you connect to your jupyter notebook server in the future.
+ -  Note: You will be asked to enter your password twice.
+ -  Your password will not appear when you type.
+ -  In case you mess-up typing your password, simply re-run "passwd()" and re-type your password twice again.
+### It will output an sha-1 cryptographic hash for your password. COPY THIS! and save it somewhere. (Perhaps in a new note in the "Notes" application) We will need it shortly.
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/12.png)
+### Once you've copied your hash somewhere, you can exit out of ipython by typing "exit" and pressing "Enter"
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/13.png)
+
+### 12. We now need to update the Jupyter Notebook Configuration File to store your password and SSL certificate information. We'll use nano (a simple text editor) to edit this file by typing the following command:
+ - nano ~/.jupyter/jupyter_notebook_config.py
+### This will open the config file in nano. Press enter a few times to give yourself some space towards the top of the file. Then copy and paste the following lines:
+ - c = get_config()  # Get the config object.
+ - c.NotebookApp.certfile = u'/home/ubuntu/ssl/cert.pem' 
+ - c.NotebookApp.keyfile = u'/home/ubuntu/ssl/cert.key' 
+ - c.IPKernelApp.pylab = 'inline'  
+ - c.NotebookApp.ip = '*'  
+ - c.NotebookApp.open_browser = False  
+ - c.NotebookApp.password = 'YOUR_HASH_GOES_HERE'  
+ ### Replace the "YOUR_HASH_GOES_HERE" on the last line, with the hash that you copied in Step 11. It should look like the following:
+ ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/14.png)
+ ### Once you've entered the lines above, you can press "control+x" -> "y" -> "Enter" to exit nano
+ 
+
+
