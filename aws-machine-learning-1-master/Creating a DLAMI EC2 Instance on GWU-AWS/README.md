@@ -1,6 +1,7 @@
 # Jupyter Notebook Server on AWS for Mac
-## 1.	Go to the following link to create your EC2 instance with Amazon's Deep Learning AMI (DLAMI), sign in with your "CCAS Cloud ID" (different from your GW net id) and password:
+## 1.	Go to the following link to create your EC2 instance with Amazon's Deep Learning AMI (DLAMI):
 http://go.gwu.edu/idpinit<br/>
+## sign in with your "CCAS Cloud ID" (different from your GW net id) and password:
 
 ## 2.	Once you login, make sure you are in "N. Virginia" Region (on the top right) and select "Services" -> "EC2":
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Creating%20a%20DLAMI%20EC2%20Instance%20on%20GWU-AWS/screenshots/1.png)
