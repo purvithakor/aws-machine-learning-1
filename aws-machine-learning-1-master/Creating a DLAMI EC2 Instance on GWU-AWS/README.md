@@ -20,10 +20,9 @@ http://go.gwu.edu/idpinit<br/>
 ## 7. It will default to a storage of 75GB, choose "Next: Add Tags"
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Creating%20a%20DLAMI%20EC2%20Instance%20on%20GWU-AWS/screenshots/6.png)
 
-## 8. The next step is very important! You MUST add TWO tags ("Name" and "gwnetid") 
- - Name should be your first and last name (as shown)
- - gwnetid should be your GW Net ID (your email address w/ out the @gwmail.gwu.edu)
-## Add them as shown, and then click "Next: Configure Security Groups" 
+## 8. The next step is very important! You MUST add TWO tags ("Name" and "gwnetid"). Add them as shown, and then click "Next: Configure Security Groups" 
+#### Name should be your first and last name (as shown)
+#### gwnetid should be your GW Net ID (your email address w/ out the @gwmail.gwu.edu)
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Creating%20a%20DLAMI%20EC2%20Instance%20on%20GWU-AWS/screenshots/7.png)
 
 ## 9. Choose "Select an existing security group" and choose the first option (DataScience-Default). Then choose "Review and Launch". 
