@@ -6,13 +6,13 @@ http://go.gwu.edu/idpinit<br/>
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/1.png)
 
 ## 3. Choose "Launch Instance"
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/2.png)
+![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/2.png)
 
 ## 4. Then select the Deep Learning AMI (Ubuntu) Version 6.0 (64 bit)
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/3.png)
+![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/3.png)
 
 ## 5. It will default to the t2.micro (free-tier eligible) instance. Click "Next: Configure Instance Details"
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/4.png)
+![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/4.png)
 
 ## 6. It will Highlight IAM role and show a warning, ignore it and choose "Next: Add Storage"
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/4.png)
+![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/5.png)
