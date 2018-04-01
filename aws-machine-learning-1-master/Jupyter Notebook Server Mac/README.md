@@ -76,7 +76,7 @@ from IPython.lib import passwd
 
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/10.png)
 
-Once it's imported, run `passwd()` as shown below:
+Once it's imported, run `passwd()` as shown below  
 
 `
 passwd()
@@ -93,7 +93,7 @@ It will output an sha-1 cryptographic hash for your password. **COPY THIS!** and
 
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/12.png)
 
-Once you've copied your hash somewhere, you can exit out of ipython by typing 'exit' and pressing 'Enter'
+Once you've copied your hash somewhere, you can exit out of ipython by typing `exit` and pressing `Enter`
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/13.png)
 
 12. We now need to update the Jupyter Notebook Configuration File to store your password and SSL certificate information. We'll use nano (a simple text editor) to edit this file by typing the following command
@@ -106,12 +106,30 @@ This will open the config file in nano. Press enter a few times to give yourself
 
 `
 c = get_config()  
-c.NotebookApp.certfile = u'/home/ubuntu/ssl/cert.pem'  
+`
+
+`
+c.NotebookApp.certfile = u'/home/ubuntu/ssl/cert.pem'    
+`
+
+`
 c.NotebookApp.keyfile = u'/home/ubuntu/ssl/cert.key'   
-c.IPKernelApp.pylab = 'inline'    
-c.NotebookApp.ip = '*'    
-c.NotebookApp.open_browser = False    
-c.NotebookApp.password = 'YOUR_HASH_GOES_HERE'    
+`
+
+`
+c.IPKernelApp.pylab = 'inline'   
+`
+
+`
+c.NotebookApp.ip = '*'  
+`
+
+`
+c.NotebookApp.open_browser = False      
+`
+
+`
+c.NotebookApp.password = 'YOUR_HASH_GOES_HERE'      
 `
 
 Replace the "YOUR_HASH_GOES_HERE" on the last line, with the hash that you copied in Step 11. It should look like the following  
