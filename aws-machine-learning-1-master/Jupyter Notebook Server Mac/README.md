@@ -207,13 +207,26 @@ The notebook will be launched and will be served to the following ip address
 
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/18.png)  
 
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/19.png)  
+It will warn you that the connection is not private. Don't worry, click "Show Details" (note the screenshots show this process using Safari, but the process will be similar for Chrome or Firefox)  
+
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/19.png)  
+
+Next, click the "visit this website" link  
 
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/20.png)  
 
+It will ask you if you are sure, click "Visit Website" indicating that you understand the risk involved
+
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/21.png)  
 
+Now enter the password that was used in **Step 11** above. Then click "Log in"
+
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/22.png)  
+
+That's it! You've successfully setup a Jupyter Notebook Server on an EC2 instance using Amazon's Deep Learning AMI. There are numerous advantages over the standard jupyter notebook on your laptop, one of these advantages is the fact that you have many deep learning softwares/frameworks available to you, if you choose "New" to create a jupyter notebook, notice how many options are available to you. Feel free to explore the tutorials that come pre-loaded on Amazon's Deep Learning AMI's as well.  
+
+Happy Coding!
+
 
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/23.png)   
 ---
