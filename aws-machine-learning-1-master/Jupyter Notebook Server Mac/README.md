@@ -57,29 +57,29 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout "cert.key" -out
 
 Start an ipython kernel
 
-'''
+'
 ipython
-'''
+'
 
-'''
+'
 Enter
-'''
+'
 
 It might take a minute or two for the ipython kernel to start, be patient, you only have to do this once!
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/9.png?raw=true)
 ---
 10. Notice that the prompt will change, it should look similar to the ipython prompt that you see in a Jupyter Notebook. import the "passwd()" method by running the following command
 
-'''
+'
 from IPython.lib import passwd
-'''
+'
 
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/10.png)
 
 Once it's imported, run 'passwd()' as shown below:
-'''
+'
 passwd()
-'''
+'
 
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/11.png?raw=true)
 
@@ -97,13 +97,13 @@ Once you've copied your hash somewhere, you can exit out of ipython by typing 'e
 
 12. We now need to update the Jupyter Notebook Configuration File to store your password and SSL certificate information. We'll use nano (a simple text editor) to edit this file by typing the following command
 
-'''
+'
 nano ~/.jupyter/jupyter_notebook_config.py
-'''
+'
 
 This will open the config file in nano. Press enter a few times to give yourself some space towards the top of the file. Then copy and paste the following lines  
 
-'''
+'
 c = get_config()  # Get the config object.
 c.NotebookApp.certfile = u'/home/ubuntu/ssl/cert.pem' 
 c.NotebookApp.keyfile = u'/home/ubuntu/ssl/cert.key' 
@@ -111,7 +111,7 @@ c.IPKernelApp.pylab = 'inline'
 c.NotebookApp.ip = '*'  
 c.NotebookApp.open_browser = False  
 c.NotebookApp.password = 'YOUR_HASH_GOES_HERE'  
-'''
+'
 
 Replace the "YOUR_HASH_GOES_HERE" on the last line, with the hash that you copied in Step 11. It should look like the following  
  ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/14.png)
