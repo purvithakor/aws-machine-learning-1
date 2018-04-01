@@ -33,11 +33,12 @@ http://go.gwu.edu/idpinit<br/>
  - https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-config.html <br/>
 ### Run the following 4 commands in order:
 
-
- - cd
- - mkdir ssl
- - cd ssl
- - sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout "cert.key" -out "cert.pem" -batch
+`
+cd
+mkdir ssl
+cd ssl
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout "cert.key" -out "cert.pem" -batch
+`
 
 ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/8.png)
 
