@@ -23,8 +23,9 @@ http://go.gwu.edu/idpinit
 ---
 
 5.	We now need to modify the permissions of our private key (it can't be publicly viewable). To do this, highlight the first command (`chmod 400 your_key_name.pem`) copy this command, and open a terminal. Navigate to the location/directory on your machine where your private key is located, and run the command that you just copied.
-  - To find the directory where your key is located, you can change directories with `cd your_directory_name`  
-  - You can then list files in the current directory with `ls`
+  - To find the directory where your key is located, you can change directories with 
+  `cd your_directory_name`   
+  - You can then list files in the current directory with `ls`  
   - Visit the following link for more information regarding unix terminal commands:
   - https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html
 ![](screenshots/3.png)
