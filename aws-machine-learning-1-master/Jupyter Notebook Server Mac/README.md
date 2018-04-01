@@ -75,25 +75,29 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout "cert.key" -out
 
 ### 12. We now need to update the Jupyter Notebook Configuration File to store your password and SSL certificate information. We'll use nano (a simple text editor) to edit this file by typing the following command:
  - nano ~/.jupyter/jupyter_notebook_config.py
-### This will open the config file in nano. Press enter a few times to give yourself some space towards the top of the file. Then copy and paste the following lines:
- - c = get_config()  # Get the config object.
- - c.NotebookApp.certfile = u'/home/ubuntu/ssl/cert.pem' 
- - c.NotebookApp.keyfile = u'/home/ubuntu/ssl/cert.key' 
- - c.IPKernelApp.pylab = 'inline'  
- - c.NotebookApp.ip = '*'  
- - c.NotebookApp.open_browser = False  
- - c.NotebookApp.password = 'YOUR_HASH_GOES_HERE'  
+### This will open the config file in nano. Press enter a few times to give yourself some space towards the top of the file. Then copy and paste the following lines
+'''
+c = get_config()  # Get the config object.
+c.NotebookApp.certfile = u'/home/ubuntu/ssl/cert.pem' 
+c.NotebookApp.keyfile = u'/home/ubuntu/ssl/cert.key' 
+c.IPKernelApp.pylab = 'inline'  
+c.NotebookApp.ip = '*'  
+c.NotebookApp.open_browser = False  
+c.NotebookApp.password = 'YOUR_HASH_GOES_HERE'  
+'''
  ### Replace the "YOUR_HASH_GOES_HERE" on the last line, with the hash that you copied in Step 11. It should look like the following:
  ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/14.png)
- ### Once you've entered the lines above, you can press "control+x" -> "y" -> "Enter" to exit nano
- ### you can now exit your ssh session as well. Go ahead and type "exit" into the terminal"
+ ### Once you've entered the lines above, you can press 'control+x' -> 'y' -> 'Enter' to exit nano
+ ### you can now exit your ssh session as well. Go ahead and type 'exit' into the terminal
  ### We are done configuring the jupyter notebook server!
+ 
+ ---
  
  # To connect to the jupyter notebook server (for future repeated use)
  ### 1. Open a terminal (if it isn't already open) navigate to the location of your private key (to navigate the linux file structure, remember the terminal commands from the link in step 5 above)
- ### Then run the following command:
-  - ssh -i mykeypair.pem -L 8157:127.0.0.1:8888 ubuntu@ec2-###-##-##-###.compute-1.amazonaws.com
-  - Replace "mykeypair.pem" with your key name
+ ### Then run the following command
+ 'ssh -i mykeypair.pem -L 8157:127.0.0.1:8888 ubuntu@ec2-###-##-##-###.compute-1.amazonaws.com'  
+  - Replace "mykeypair.pem" with your key name
   - Replace "ec2-###-##-##-###.compute-1.amazonaws.com" with your public DNS
   ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/16.png?raw=true)
   - In case you forgot either your key name, or your DNS, they can be found from selecting your instance from the list of running EC2 instances (AWS page) and clicking "Connect"
