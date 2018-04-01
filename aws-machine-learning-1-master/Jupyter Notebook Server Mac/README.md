@@ -201,11 +201,21 @@ The notebook will be launched and will be served to the following ip address
 
 ---
 
-4. At this point, you can simply open a browser (Firefox, Chrome, Safari, etc.) and navigate to the following url where your notebook is being served:
+4. At this point, you can simply open a browser on **YOUR LOCAL MACHINE/LAPTOP** (Firefox, Chrome, Safari, etc.) and navigate to the following url where your notebook is being served from your EC2 instace
 
 `https://127.0.0.1:8157/`  
 
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/18.png)  
 
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/19.png)  
+
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/20.png)  
+
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/21.png)  
+
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/22.png)  
+
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/23.png)   
 ---
 
 
