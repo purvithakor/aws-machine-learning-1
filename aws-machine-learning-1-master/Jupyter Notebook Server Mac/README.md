@@ -31,17 +31,20 @@ http://go.gwu.edu/idpinit<br/>
 ### 8. Now that we have successfully logged-in/ssh'd-in to our DLAMI EC2 instance, we will configure the Jupyter Notebook Server. First, we have to create an ssl certificate.
  - we will be following the instructions from the following AWS documentation:
  - https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-config.html <br/>
-### Run the following 4 commands in order:
+### Run the following 4 commands in order
 
 `
 cd
 `
+
 `
 mkdir ssl
 `
+
 `
 cd ssl
 `
+
 `
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout "cert.key" -out "cert.pem" -batch
 `
