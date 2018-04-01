@@ -62,4 +62,5 @@ http://go.gwu.edu/idpinit
  ![](screenshots/10.png)
  - Hint: If, after downloading your key, the key/file somehow gets renamed to something like `brent_skoumal_ML1_key.pem.txt`, you should right click on it and rename it. 
  - The key has to be saved with the ".pem" extension or else your computer won't treat it as a certificate.
+ - For Example: `brent_skoumal_ML1_key.pem`
  
