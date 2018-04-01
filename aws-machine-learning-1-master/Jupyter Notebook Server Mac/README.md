@@ -56,14 +56,19 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout "cert.key" -out
 9. Next, we need to create a password. You use this password to log in to the Jupyter notebook server from your client (a.k.a. local machine/personal laptop) so you can securely access the notebook being served from your EC2 instance.
 
 Start an ipython kernel
+
 '''
 ipython
 '''
-then press 'Enter'
+
+'''
+Enter
+'''
+
 It might take a minute or two for the ipython kernel to start, be patient, you only have to do this once!
 ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/9.png?raw=true)
-
-10. Notice that the prompt will change, it should look similar to the ipython prompt that you see in a Jupyter Notebook. import the 'passwd()' method by running the following command
+---
+10. Notice that the prompt will change, it should look similar to the ipython prompt that you see in a Jupyter Notebook. import the "passwd()" method by running the following command
 
 '''
 from IPython.lib import passwd
