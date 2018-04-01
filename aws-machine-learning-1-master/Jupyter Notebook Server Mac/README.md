@@ -13,12 +13,12 @@ http://go.gwu.edu/idpinit
  - "Actions" -> "Instance State" -> "Start"
  - It might take a minute or two for your instance to "spin-up" (start)
  - If it seems like it is taking a long time for your Instance State to turn green, try refreshing the page
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/5.png)
+![](screenshots/5.png)
 
 ---
 
 4.	Once your instance is up and running, select it from the list, and choose "Connect"
-![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/2.png?raw=true)
+![](screenshots/2.png?raw=true)
 
 ---
 
