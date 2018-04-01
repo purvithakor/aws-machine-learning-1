@@ -5,7 +5,7 @@ http://go.gwu.edu/idpinit
 ---
 
 2.	Once you login, make sure you are in "N. Virginia" Region (on the top right) and select "Services" -> "EC2"
-![](screenshots/1.png)
+![](screenshots/1b.png)
 
 ---
 
@@ -18,7 +18,7 @@ http://go.gwu.edu/idpinit
 ---
 
 4.	Once your instance is up and running, select it from the list, and choose "Connect"
-![](screenshots/2.png?raw=true)
+![](screenshots/2.png)
 
 ---
 
@@ -27,25 +27,25 @@ http://go.gwu.edu/idpinit
   - You can then list files in the current directory with `ls`
   - Visit the following link for more information regarding unix terminal commands:
   - https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html
-![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/3.png?raw=true)
+![](screenshots/3.png)
 
 ---
 
 6.	We will now connect (a.k.a. "ssh into") our instance. To establish this connection (assuming you are in the directory where your private key (`your_key_name.pem`) is located, copy/paste the third command (shown below) into the terminal.
- ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/4.png)
+ ![](screenshots/4.png)
 
 ---
 
 7. It will ask you if you are sure you want to continue connecting. Type `yes` and press `Enter`
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/6.png)
+![](screenshots/6.png)
  - After you press enter, you will see your terminal prompt change. You should now have a prompt like the one shown below:
-  ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/7.png)
+![](screenshots/7.png)
 
 ---
 
 8. Now that we have successfully logged-in/ssh'd-in to our DLAMI EC2 instance, we will configure the Jupyter Notebook Server. First, we have to create an ssl certificate. We will be following the instructions from the following AWS documentation  
 
-https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-config.html <br/>
+https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-config.html
 
 Run the following 4 commands in order
 
@@ -65,7 +65,7 @@ cd ssl
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout "cert.key" -out "cert.pem" -batch
 `
 
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/8.png)
+![](screenshots/8.png)
 
 ---
 
@@ -83,7 +83,7 @@ Enter
 
 It might take a minute or two for the ipython kernel to start, be patient, you only have to do this once!
 
-![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/9.png?raw=true)
+![](screenshots/9.png)
 
 ---
 
@@ -93,7 +93,7 @@ It might take a minute or two for the ipython kernel to start, be patient, you o
 from IPython.lib import passwd  
 `
 
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/10.png)
+![](screenshots/10.png)
 
 Once it's imported, run `passwd()` as shown below  
 
@@ -101,7 +101,7 @@ Once it's imported, run `passwd()` as shown below
 passwd()
 `
 
-![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/11.png?raw=true)
+![](screenshots/11.png)
 
 ---
 
@@ -112,10 +112,10 @@ passwd()
 
 It will output an sha-1 cryptographic hash for your password. **COPY THIS!** and save it somewhere. (Perhaps in a new note in the "Notes" application) We will need it shortly.
 
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/12.png)
+![](screenshots/12.png)
 
 Once you've copied your hash somewhere, you can exit out of ipython by typing `exit` and pressing `Enter`
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/13.png)
+![](screenshots/13.png)
 
 ---
 
@@ -156,7 +156,7 @@ c.NotebookApp.password = 'YOUR_HASH_GOES_HERE'
 `
 
 Replace the "YOUR_HASH_GOES_HERE" on the last line, with the hash that you copied in Step 11. It should look like the following  
- ![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/14.png)
+ ![](screenshots/14.png)
 
 Once you've entered the lines above, you can press 'control+x' -> 'y' -> 'Enter' to exit nano
 you can now exit your ssh session as well. Go ahead and type 'exit' into the terminal
@@ -181,13 +181,13 @@ We are done configuring the jupyter notebook server!
  - Replace `mykeypair.pem` with your key name   
  - Replace `ec2-###-##-##-###.compute-1.amazonaws.com` with your public DNS  
 
-![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/16.png?raw=true)
+![](screenshots/16.png)
 
  - In case you forgot either your key name, or your DNS, they can be found from selecting your instance from the list of running EC2 instances (AWS page) and clicking "Connect"  
 
-![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/2.png?raw=true)    
+![](screenshots/2.png)    
 
-![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/15.png?raw=true)  
+![](screenshots/15.png)  
 
 ---
 
@@ -197,7 +197,7 @@ The notebook will be launched and will be served to the following ip address
 
 `https://127.0.0.1:8157/`  
 
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/17.png)
+![](screenshots/17.png)
 
 ---
 
@@ -205,31 +205,29 @@ The notebook will be launched and will be served to the following ip address
 
 `https://127.0.0.1:8157/`  
 
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/18.png)  
+![](screenshots/18.png)  
 
 It will warn you that the connection is not private. Don't worry, click "Show Details" (note the screenshots show this process using Safari, but the process will be similar for Chrome or Firefox)  
 
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/19.png)  
+![](screenshots/19.png)  
 
 Next, click the "visit this website" link  
 
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/20.png)  
+![](screenshots/20.png)  
 
 It will ask you if you are sure, click "Visit Website" indicating that you understand the risk involved
 
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/21.png)  
+![](screenshots/21.png)  
 
 Now enter the password that was used in **Step 11** above. Then click "Log in"
 
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/22.png)  
+![](screenshots/22.png)  
 
 That's it! You've successfully setup a Jupyter Notebook Server on an EC2 instance using Amazon's Deep Learning AMI. There are numerous advantages over the standard jupyter notebook on your laptop, one of these advantages is the fact that you have many deep learning softwares/frameworks available to you, if you choose "New" to create a jupyter notebook, notice how many options are available to you. Feel free to explore the tutorials that come pre-loaded on Amazon's Deep Learning AMI's as well.  
 
-Happy Coding!
-
-
-![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/23.png)   
+![](screenshots/23.png)   
 ---
 
+Happy Coding!  
 
 
