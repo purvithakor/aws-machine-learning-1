@@ -35,8 +35,14 @@ http://go.gwu.edu/idpinit<br/>
 
 `
 cd
+`
+`
 mkdir ssl
+`
+`
 cd ssl
+`
+`
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout "cert.key" -out "cert.pem" -batch
 `
 
