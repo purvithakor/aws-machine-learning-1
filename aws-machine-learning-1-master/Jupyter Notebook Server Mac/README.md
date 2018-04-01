@@ -172,7 +172,7 @@ We are done configuring the jupyter notebook server!
 
 ---
 
-2. Open a terminal (if it isn't already open) navigate to the location of your private key (to navigate the linux file structure, remember the terminal commands from the link in step 5 above). Then run the following command  
+2. Open a **NEW TERMINAL WINDOW** navigate to the location of your private key (to navigate the linux file structure, remember the terminal commands from the link in step 5 above). Then run the following command  
  
  `
  ssh -i mykeypair.pem -L 8157:127.0.0.1:8888 ubuntu@ec2-###-##-##-###.compute-1.amazonaws.com
@@ -191,4 +191,22 @@ We are done configuring the jupyter notebook server!
 
 ---
 
-3. 
+3. Once you have successfully logged in to your DLAMI instance, simply type `jupyter notebook` and press `Enter`
+
+The notebook will be launched and will be served to the following ip address
+
+`https://127.0.0.1:8157/`  
+
+![](https://raw.github.com/yuxiaohuang/aws-machine-learning-1/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/17.png)
+
+---
+
+4. At this point, you can simply open a browser (Firefox, Chrome, Safari, etc.) and navigate to the following url where your notebook is being served:
+
+`https://127.0.0.1:8157/`  
+
+
+---
+
+
+
