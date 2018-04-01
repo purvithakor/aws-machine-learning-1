@@ -77,12 +77,12 @@ http://go.gwu.edu/idpinit<br/>
  ### We are done configuring the jupyter notebook server!
  
  # To connect to the jupyter notebook server (for future repeated use)
- ### 1. Open a terminal (if it isn't already open) navigate to the location of your private key (remember the linux terminal commands from the link in step 5 above)
+ ### 1. Open a terminal (if it isn't already open) navigate to the location of your private key (to navigate the linux file structure, remember the terminal commands from the link in step 5 above)
  ### Then run the following command:
   - ssh -i mykeypair.pem -L 8157:127.0.0.1:8888 ubuntu@ec2-###-##-##-###.compute-1.amazonaws.com
   - Replace "mykeypair.pem" with your key name
   - Replace "ec2-###-##-##-###.compute-1.amazonaws.com" with your public DNS
-   ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/15.png?raw=true)
+  ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/16.png?raw=true)
   - In case you forgot either your key name, or your DNS, they can be found from selecting your instance from the list of running EC2 instances (AWS page) and clicking "Connect"
   ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/2.png?raw=true)
-![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/16.png?raw=true)
+   ![](https://github.com/yuxiaohuang/aws-machine-learning-1/blob/master/aws-machine-learning-1-master/Jupyter%20Notebook%20Server%20Mac/screenshots/15.png?raw=true)
